@@ -85,8 +85,61 @@ const JSInterview3 = () => {
      * ? b is block scoped function it can only be accessed inside of if statement
      * */
   }
+  /**
+   * ? Const let and var
+   *  ! Const - block level variable can not be re-declare
+   *  ! let - block level variable can be re-declare using diffrent value
+   *  ! var - functional level variable can be re-declare using value can be initialize before declaration benefit of hoisting
+   */
+  /**
+   * ? cookies localStorage sessionStorage
+   * ! Cookies - 4kb capacity manual expire date can be sent with request stored browser and server
+   * ! localStorage - 10mb capacity never expires can not be sent with request store in browser only
+   * ! sessionStorage - 5mb capacity expires when tab is closed cant send with request store in browser only
+   */
+  /**
+   * ? Spread Operator
+   */
+  // add new elements to existing array with elements
+  var arr = [
+    "Chennai Super Kings",
+    "Delhi DareDevils",
+    "Kolkata Knight Riders",
+    "Mumbai Indians",
+  ];
+  var newArr2 = [
+    "Rajsthan Royals",
+    "Kochi Tuskers Kerala",
+    "Punjab Kings XI",
+    ...arr,
+  ];
+  console.log("newArr2", newArr2);
   console.log("JSInterview Prep Part 3 Ends here");
-
+  // pass elements of array as argument to a function
+  const addNumber = (a, b, c) => {
+    return a + b + c;
+  };
+  var arr3 = [1, 2, 3];
+  console.log(addNumber(...arr3));
+/// copy array
+var arr4 = [...newArr2]
+console.log('arr4',arr4)
+// concatenate the arrays
+var numbArr1 = [1,2,3,4]
+var numbArr2 = [5,6,7,8]
+//numberArr3 = numbArr1.concat(numbArr2)
+var finalArr = [...numbArr1,...numbArr2]
+ /**
+   * ? Rest Operator
+   */
+  // !condense multiple arguments into single array.
+  function multipler(multiplier,...theArs){
+    return theArs.map(function(elem){
+      return multiplier * elem
+    })
+  } 
+  var finalNeArr = multipler(1,2,3,4,5)
+  console.log('finalNeArr',finalNeArr)
   return <div>JSInterview3</div>;
 };
 
