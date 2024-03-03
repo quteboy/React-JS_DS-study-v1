@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import JSInterview1 from './Components/JavascriptInterviews/JSInterview1'
 import JSInterview2 from './Components/JavascriptInterviews/JSInterview2'
+import JSInterview3 from './Components/JSInterview3'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
     <>
      <JSInterview1/>
      <JSInterview2/>
+     <JSInterview3/>
     </>
   )
 }
