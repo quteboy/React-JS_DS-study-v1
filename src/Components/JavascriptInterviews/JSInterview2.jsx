@@ -3,15 +3,15 @@ import React from "react";
 const JSInterview2 = () => {
   console.log("JSInterview Prep Part 2 Starts here");
   /**
-   * Types of Error in JS
-   * evalError InternalError RangeError ReferenceError SyntaxError TypeError URIError
-   * evalError:error regarding the global function eval()
-   * internalerror:internal error in JS engine
-   * RangeError:numeric value or parameter is outside of range
-   * referenceError:invalid variable reference
-   * syntaxerror: syntax while writing the code
-   * typeerror:parameter or variable not valid for type
-   * uriparameter: invalid parameter passed to decodeURL or enCodeURL
+   * ? Types of Error in JS
+   * ? evalError InternalError RangeError ReferenceError SyntaxError TypeError URIError
+   * ? evalError:error regarding the global function eval()
+   * ? internalerror:internal error in JS engine
+   * ? RangeError:numeric value or parameter is outside of range
+   * ? referenceError:invalid variable reference
+   * ? syntaxerror: syntax while writing the code
+   * ? typeerror:parameter or variable not valid for type
+   * ? uriparameter: invalid parameter passed to decodeURL or enCodeURL
    */
   // how to decremte the length of an array
   //method one
