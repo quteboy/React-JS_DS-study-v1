@@ -5,6 +5,7 @@ import JSInterview2 from "./Components/JavascriptInterviews/JSInterview2";
 import JSInterview3 from "./Components/JavascriptInterviews/JSInterview3";
 import JSInterview4 from "./Components/JavascriptInterviews/JSInterview4";
 import JSArrayFilter from "./Components/JavaScriptArrays/JSArrayFilter";
+import APIFetch1 from "./Components/APIFetch/APIFetch1";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <JSInterview3 />
       <JSInterview4 />
       <JSArrayFilter />
+      <APIFetch1 />
     </>
   );
 }
