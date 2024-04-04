@@ -94,7 +94,7 @@ const APIFetch1 = () => {
             <span>{description}</span>
             <div>
               {images.map((url, index) => {
-                return <img key={index} src={url} alt={title} />;
+                return <img height={300} width={300} key={index} src={url} alt={title} />;
               })}
             </div>
           </>
