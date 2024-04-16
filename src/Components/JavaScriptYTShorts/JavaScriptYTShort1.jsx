@@ -137,25 +137,25 @@ if (obj.hasOwnProperty(keyCheck)) {
      */
   }
   short198();
-  function short197(){
-    console.log([41,31] > [89]) // false
-    console.log([3] > [2]) // true
+  function short197() {
+    console.log([41, 31] > [89]); // false
+    console.log([3] > [2]); // true
     /**
      * ? when comparing array using > symbol javascript converts array type coersion into strings and compare them string by string
      */
   }
-  short197()
-  function short196(){
-    function isPass(){
-        console.log('he passed')
-        return 'Passed'
+  short197();
+  function short196() {
+    function isPass() {
+      console.log("he passed");
+      return "Passed";
     }
-    function isTopper(){
-        console.log('he is topper')
-        return 'Topper'
+    function isTopper() {
+      console.log("he is topper");
+      return "Topper";
     }
-    const msg = isPass() && isTopper()
-    console.log(`Msg is ${msg}`) // Msg is Topper
+    const msg = isPass() && isTopper();
+    console.log(`Msg is ${msg}`); // Msg is Topper
     /**
      * ! when 2 functions are executed together using && operator 1st function executes 1st by default its value is assigned to expression
      * ! and if 1st function is returning its value it becomes value for that expression
@@ -164,24 +164,71 @@ if (obj.hasOwnProperty(keyCheck)) {
      * ! if 1st function returned empty string then empty string would have treated falsy so 2nd functions value would get assigned to expression
      */
   }
-  short196()
-  function short195(){
-    const x = (1,2,3,4)
-    console.log('x =',x) // 4 
+  short196();
+  function short195() {
+    const x = (1, 2, 3, 4);
+    console.log("x =", x); // 4
     /**
      * * value every value is assigned to x one by one the last value will becomes it final or default value
      */
   }
-  short195()
-  function short194(){
-    let {x,x:y} = {x:2}
-    console.log('x', x) // 2
-    console.log('y', y) // 2
+  short195();
+  function short194() {
+    let { x, x: y } = { x: 2 };
+    console.log("x", x); // 2
+    console.log("y", y); // 2
     /**
      * ! in javascript you can destructure the same object key many time as long as you use different identifier as above
      */
   }
-  short194()
+  short194();
+  function short193() {
+    const name = "JS is awesome";
+    function show(a, b) {
+      console.log("a ->", a);
+      console.log("b ->", b);
+    }
+    show`Hey ${name} okay !`; /// ! this method is called tagging template literal where you can invoke function without parenthesis
+  }
+  short193();
+  function short192() {
+    function func1() {
+      return fu;
+      console.log("Yu");
+      fu = 10;
+      function fu() {}
+      var fu = "11";
+    }
+    console.log(typeof func1); /// output is function because in hoisting function takes priority over variables so function fu moves to top first return f
+  }
+  short192();
+  function short191() {
+    if ([]) {
+      // [] is truty value
+      console.log("House of Ninja");
+    }
+    if ([] == false) {
+      // == will convert []  to empty string and empty string is 0 and false is also 0 it will render true
+      console.log("House of flying daggers");
+    } else {
+      console.log("Nothing");
+    }
+  }
+  short191();
+  function short190() {
+    //console.log(2.awesome) an identifer can be immediately follwed by decimal or string
+  }
+  function short189(num) { // infinite argument problem
+    return (num2) => {
+      if (num2 == undefined) {
+        return num;
+      } else {
+        return short189(num + num2);
+      }
+    };
+  }
+  const resp = short189(1)(2)(3)(4)();
+  console.log('resp',resp)
   return <div>Check Console log</div>;
 };
 
