@@ -82,6 +82,34 @@ const InterviewQues = () => {
    * 
    * ?
    */
+ const imageUrls = [
+  'https://example.com/image1.jpg',
+  'https://example.com/image2.jpg',
+  'https://example.com/image3.jpg',
+];
+
+ const ImageCarousel = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000);
+
+    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+  }, [images.length]);
+  // return (
+  //   <div>
+  //     <h1>Image Carousel</h1>
+  //     <ImageCarousel images={imageUrls} />
+  //   </div>
+  // );
+  return (
+    <div className="image-carousel">
+      <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+    </div>
+  );
+};
   return <div>InterviewQues</div>;
 };
 
