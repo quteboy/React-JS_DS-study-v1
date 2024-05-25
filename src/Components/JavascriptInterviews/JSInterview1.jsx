@@ -47,6 +47,19 @@ function JSInterview1() {
 
     console.log("newString", newString);
   }
+  const reverString3 = (str) => {
+    var newStr = "";
+    newStr = str.split("").reverse().join("");
+    if (newStr == str) {
+      console.log("Give string is palindrome");
+    } else {
+      console.log("not a palindrome");
+    }
+    for (let i = str.length -1 ; i>= 0; i--){
+      newStr +=str[i]
+    }
+  };
+  reverString3('racecar')
   const reverseString2 = (string) => {
     var newString2 = "";
     for (let i = string.length - 1; i >= 0; i--) {
@@ -166,21 +179,21 @@ function JSInterview1() {
       }
     }
   }
-  const finalAnaGramCheck = (str,str2) =>{
-    var a = str.replace(/\s/g,"").toLowerCase()
-    var b = str2.replace(/\s/g,"").toLowerCase()
-    if(a.length !== b.length){
-      console.log('cant be anagrams')
-    } else{
-      a = a.split("").sort().join("")
-      b = b.split("").sort().join("")
-      if(a === b){
-        console.log(a,'=',b)
-        console.log('are anagrams')
+  const finalAnaGramCheck = (str, str2) => {
+    var a = str.replace(/\s/g, "").toLowerCase();
+    var b = str2.replace(/\s/g, "").toLowerCase();
+    if (a.length !== b.length) {
+      console.log("cant be anagrams");
+    } else {
+      a = a.split("").sort().join("");
+      b = b.split("").sort().join("");
+      if (a === b) {
+        console.log(a, "=", b);
+        console.log("are anagrams");
       }
     }
-  }
-  finalAnaGramCheck('pot','otp')
+  };
+  finalAnaGramCheck("pot", "otp");
   //isAnagramFn('Army','Mary')
   //anagramCheck("Mary", "Army");
   return <div>Check console for better undestanding</div>;
