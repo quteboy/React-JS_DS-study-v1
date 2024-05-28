@@ -7,7 +7,7 @@ import JSInterview4 from "./Components/JavascriptInterviews/JSInterview4";
 import JSArrayFilter from "./Components/JavaScriptArrays/JSArrayFilter";
 import APIFetch1 from "./Components/APIFetch/APIFetch1";
 import JavaScriptYTShort1 from "./Components/JavaScriptYTShorts/JavaScriptYTShort1";
-import CallApplyBind from "srcComponentsAkshaySainicallStackBind";
+import CallApplyBind from "./Components/AkshaySaini/callStackBind";
 
 function App() {
   const [count, setCount] = useState(0);

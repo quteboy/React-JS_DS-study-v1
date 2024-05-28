@@ -1,6 +1,7 @@
 import React from "react";
 
 const CallApplyBind = () => {
+  // call apply bind
   let name = {
     name: "James",
     lastName: "Bond",
@@ -9,6 +10,12 @@ const CallApplyBind = () => {
     },
   };
   name.printFullName();
+  let name2 = {
+    name:'Moneypenny',
+    lastName:'Q'
+  }
+  // function borrowing
+  name.printFullName.call(name2)
   return <div>callStackBind</div>;
 };
 
