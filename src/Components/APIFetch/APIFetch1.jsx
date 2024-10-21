@@ -70,6 +70,25 @@ const APIFetch1 = () => {
     );
     setProductList(results);
   };
+  const axiosFetch = async () => {
+    const resp = await axios
+      .get("url goes here")
+      .then((resp) => {
+        /// do something
+      })
+      .catch((err) => {
+        /// catch error here
+      });
+  };
+  const fetchFetch = async () => {
+    const resp = await fetch("url")
+      .then((resp) => {
+        /// do something
+      })
+      .catch((err) => {
+        // catch error
+      });
+  };
   useEffect(() => {
     fetchPosts();
     fetchProducts();
@@ -94,7 +113,15 @@ const APIFetch1 = () => {
             <span>{description}</span>
             <div>
               {images.map((url, index) => {
-                return <img height={300} width={300} key={index} src={url} alt={title} />;
+                return (
+                  <img
+                    height={300}
+                    width={300}
+                    key={index}
+                    src={url}
+                    alt={title}
+                  />
+                );
               })}
             </div>
           </>

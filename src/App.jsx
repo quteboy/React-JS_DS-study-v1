@@ -8,7 +8,9 @@ import JSArrayFilter from "./Components/JavaScriptArrays/JSArrayFilter";
 import APIFetch1 from "./Components/APIFetch/APIFetch1";
 import JavaScriptYTShort1 from "./Components/JavaScriptYTShorts/JavaScriptYTShort1";
 import CallApplyBind from "./Components/AkshaySaini/callStackBind";
-
+import DebounceHook from "./Components/AkshaySaini/Debounce";
+import JSInterview6 from "./Components/JavascriptInterviews/JSInterview6";
+import ImageSlider from "./Components/ImageSlider/ImageSlider";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -22,6 +24,9 @@ function App() {
       {/* <APIFetch1 /> */}
       <JavaScriptYTShort1 />
       <CallApplyBind />
+      <JSInterview6 />
+      <DebounceHook />
+      <ImageSlider />
     </>
   );
 }
